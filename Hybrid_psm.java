@@ -17,14 +17,7 @@ public class ProjectSpecificMethods extends SeleniumBase {
 		return DataLibrary.readExcelData(excelFileName);
 	}
 	
-	/*
-	 * @Parameters ()
-	 * 
-	 * @BeforeMethod public void preCondition() { startApp("chrome", false,
-	 * "https://login.salesforce.com/"); setNode();
-	 * 
-	 * }
-	 */
+	
 	@Parameters({"browser","url"})
 	@BeforeMethod
 	public void preCondition(String browser, String url) {
@@ -38,12 +31,7 @@ public class ProjectSpecificMethods extends SeleniumBase {
 	public void postCondition() {
 		close();
 
-	}
-
-	
-
-	
-	  
+	} 
 
 	
 	
